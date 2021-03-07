@@ -20,4 +20,4 @@ Create the following SSM parameters:
 
 ### Provisioning infrastructure
 
-Run `terraform apply`
+Run `terraform init` to install the modules and then run `terraform apply` to provision the infrastructure on AWS.

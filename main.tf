@@ -28,8 +28,8 @@ module "rds" {
 module "ec2" {
   source = "./modules/ec2"
 
-  availability_zones        = var.availability_zones
-  public_subnet_ids         = module.vpc.public_subnet_ids
-  ssh_key_pair_name         = var.ssh_key_pair_name
-  bastion_security_group_id = module.security_groups.bastion_security_group_id
+  availability_zones = var.availability_zones
+  public_subnet_ids  = module.vpc.public_subnet_ids
+  ssh_key_pair_name  = var.ssh_key_pair_name
+  security_group_id  = module.security_groups.bastion_security_group_id
 }
